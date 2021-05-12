@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 *, ::before, ::after {
   box-sizing: border-box; }
 
@@ -17,8 +18,7 @@ body {
   height: 100%;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
-  overflow: hidden; }
+  line-height: 1.5; }
 
 img {
   max-width: 100%;
@@ -40,187 +40,204 @@ button {
 a {
   text-decoration: none; }
 
-.interface {
-  display: grid;
-  align-items: center;
+* {
+  font-family: roboto;
+  -webkit-transition: ease-in-out background-color 200ms, border-color 200ms, color 200ms, opacity 200ms;
+  -moz-transition: ease-in-out background-color 200ms, border-color 200ms, color 200ms, opacity 200ms;
+  -ms-transition: ease-in-out background-color 200ms, border-color 200ms, color 200ms, opacity 200ms;
+  -o-transition: ease-in-out background-color 200ms, border-color 200ms, color 200ms, opacity 200ms;
+  transition: ease-in-out background-color 200ms, border-color 200ms, color 200ms, opacity 200ms; }
+
+#nav {
   width: 100%;
-  grid-template-columns: 0px repeat(6, 1fr) 0px;
-  column-gap: 16px; }
-  @media only screen and (min-width: 600px) {
-    .interface {
-      grid-template-columns: 48px repeat(6, 1fr) 48px;
-      column-gap: 16px; } }
-  @media only screen and (min-width: 900px) {
-    .interface {
-      grid-template-columns: 32px repeat(12, 1fr) 48px;
-      column-gap: 16px; } }
-  @media only screen and (min-width: 1200px) {
-    .interface {
-      grid-template-columns: 80px repeat(12, 1fr) 80px;
-      column-gap: 32px; } }
-  @media only screen and (min-width: 1800px) {
-    .interface {
-      grid-template-colimns: 1fr repeat(12, 112px) 1fr;
-      column-gap: 32px; } }
-
-@font-face {
-  font-family: "Archia-Regular";
-  src: url("/font/archia-regular.otf") format("opentype"); }
-
-@font-face {
-  font-family: "Archia-Medium";
-  src: url("/font/archia-medium.otf") format("opentype"); }
-
-@font-face {
-  font-family: "Archia-SemiBold";
-  src: url("/font/archia-semibold.otf") format("opentype"); }
-
-@font-face {
-  font-family: "JetBrainsMono-Regular";
-  src: url("/font/jetbrainsmono-regular.woff2") format("woff2"); }
-
-.type-heading-1 {
-  font-size: 76px;
-  font-family: "Archia-Medium";
-  font-weight: 500;
-  line-height: 120%; }
-
-.type-heading-2 {
-  font-size: 48px;
-  font-family: "Archia-Medium";
-  font-weight: 500;
-  line-height: 120%; }
-
-.type-heading-3 {
-  font-size: 28px;
-  font-family: "Archia-Regular";
-  font-weight: 400;
-  line-height: 120%; }
-
-.type-body-large {
-  font-size: 24px;
-  font-family: "Archia-Regular";
-  font-weight: 400;
-  line-height: 120%; }
-
-.type-body {
-  font-size: 18px;
-  font-family: "Archia-Regular";
-  font-weight: 400;
-  line-height: 120%; }
-
-.type-body-small {
-  font-size: 16px;
-  font-family: "Archia-Regular";
-  font-weight: 400;
-  line-height: 120%; }
-
-.type-label {
-  font-size: 18px;
-  font-family: "Archia-Medium";
-  font-weight: 500;
-  line-height: 120%;
-  margin-bottom: 12px; }
-
-.type-input {
-  font-size: 18px;
-  font-family: "JetBrainsMono-Regular";
-  font-weight: 400;
-  line-height: 120%; }
-
-.type-button {
-  font-size: 16px;
-  font-family: "Archia-Medium";
-  font-weight: 500;
-  line-height: 120%;
-  letter-spacing: 1px;
-  text-transform: uppercase; }
-
-.spacing-64 {
-  margin-bottom: 64px; }
-
-.spacing-48 {
-  margin-bottom: 48px; }
-
-.spacing-32 {
-  margin-bottom: 32px; }
-
-.spacing-14 {
-  margin-bottom: 14px; }
-
-input[type=text], input[type=email], input[type=password] {
-  width: 100%;
-  height: 58px;
-  background-color: #FFFFFF;
-  border-radius: 3px;
-  border-style: solid;
-  border-width: 2px;
-  border-color: #E5E5E5;
-  padding: 0px 22px; }
-  input[type=text]::-webkit-input-placeholder, input[type=text]::-moz-placeholder, input[type=text]:-ms-input-placeholder, input[type=text]:-moz-placeholder, input[type=email]::-webkit-input-placeholder, input[type=email]::-moz-placeholder, input[type=email]:-ms-input-placeholder, input[type=email]:-moz-placeholder, input[type=password]::-webkit-input-placeholder, input[type=password]::-moz-placeholder, input[type=password]:-ms-input-placeholder, input[type=password]:-moz-placeholder {
-    background-color: #969696; }
-
-.button {
-  width: 100%;
-  background-color: #1E272E;
-  height: 58px;
-  color: #FFFFFF;
-  border-radius: 3px;
-  cursor: pointer; }
-  .button:hover {
-    opacity: 0.9; }
-
-#temp {
-  background-color: red;
-  height: 1000px; }
-  @media (max-width: 599px) {
-    #temp {
-      background-color: #7ed6df; } }
-  @media (min-width: 600px) {
-    #temp {
-      background-color: #e056fd; } }
-  @media (min-width: 900px) {
-    #temp {
-      background-color: #686de0; } }
-  @media (min-width: 1200px) {
-    #temp {
-      background-color: #30336b; } }
-  @media (min-width: 1800px) {
-    #temp {
-      background-color: #95afc0; } }
-
-#login {
-  width: 100%;
-  height: 100vh;
+  padding: 20px 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
-  color: #1E272E; }
-  #login #left {
-    width: 50%;
-    max-width: 960px;
-    height: 100%;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+  z-index: 100; }
+  #nav h3 {
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    cursor: pointer; }
+    #nav h3:hover {
+      color: #686de0; }
+  #nav ul {
     display: flex;
-    align-items: center;
-    padding: 0px 120px;
-    background-color: #1E272E; }
-    #login #left .type-heading-1, #login #left .type-heading-3 {
-      color: #FCFCFC; }
-    #login #left .type-heading-3 {
-      line-height: 170%; }
-  #login #right {
+    align-items: center; }
+    #nav ul li {
+      margin-right: 40px;
+      color: white;
+      font-size: 20px;
+      cursor: pointer; }
+      #nav ul li:hover {
+        color: #686de0; }
+  #nav button {
+    color: white;
+    height: 60px;
+    padding: 0px 80px;
+    border: solid 1px white;
+    font-size: 20px;
+    border-radius: 2px;
+    cursor: pointer; }
+    #nav button:hover {
+      background-color: #686de0;
+      border-color: #686de0; }
+
+#hero {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  height: 75vh;
+  overflow: hidden; }
+  #hero #background-img {
+    position: absolute;
+    object-fit: cover;
+    min-height: 100%; }
+  #hero #content {
+    z-index: 10;
+    width: 100%;
+    color: white;
+    padding: 0 160px; }
+    #hero #content h1 {
+      font-size: 80px;
+      font-weight: 500;
+      margin-bottom: 10px; }
+    #hero #content p {
+      font-size: 20px;
+      width: 600px;
+      margin-bottom: 30px; }
+    #hero #content button {
+      color: white;
+      height: 60px;
+      padding: 0px 80px;
+      font-size: 20px;
+      border: solid 1px white;
+      cursor: pointer;
+      border-radius: 2px; }
+      #hero #content button:hover {
+        background-color: #686de0;
+        border-color: #686de0; }
+
+#stats {
+  padding: 160px 160px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  color: #686de0; }
+  #stats h2 {
+    font-size: 40px;
+    font-weight: 500;
+    color: #686de0;
+    margin-bottom: 20px; }
+  #stats > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px; }
+    #stats > div h4 {
+      font-size: 50px;
+      margin-bottom: 10px; }
+    #stats > div p {
+      font-size: 16px;
+      color: black; }
+
+#areas {
+  padding: 160px 160px;
+  background-color: #686de0;
+  display: flex; }
+  #areas > div {
     width: 50%;
-    height: 100%;
+    height: 100%; }
+    #areas > div #practice_areas {
+      width: 80%;
+      border-bottom: 2px solid white;
+      color: white;
+      font-size: 40px;
+      font-weight: 500; }
+    #areas > div #areas_list {
+      list-style: none; }
+      #areas > div #areas_list li {
+        font-size: 50px;
+        color: white;
+        margin-bottom: 40px; }
+      #areas > div #areas_list li:nth-child(3) {
+        margin-bottom: 0; }
+
+#search {
+  background-color: white;
+  padding: 160px 160px; }
+  #search #content h2 {
+    width: 100%;
+    font-size: 40px;
+    color: #686de0;
+    margin-bottom: 20px; }
+  #search #content div {
     display: flex;
-    align-items: center;
-    padding-left: 180px;
-    padding-right: 120px; }
-    #login #right .content {
-      width: 100%;
-      max-width: 630px; }
-    #login #right label {
-      display: block; }
-    #login #right #links span:nth-child(1) {
-      float: left; }
-    #login #right #links span:nth-child(2) {
-      float: right; }
-    #login #right #links a {
-      color: #1E272E; }
+    justify-content: space-between; }
+    #search #content div input {
+      height: 60px;
+      font-size: 20px;
+      padding: 0px 40px;
+      flex-grow: 1;
+      border: solid 1px #686de0; }
+      #search #content div input:focus {
+        border: 2px solid #686de0; }
+    #search #content div button {
+      color: #686de0;
+      height: 60px;
+      padding: 0px 80px;
+      border: solid 1px #686de0;
+      font-size: 20px;
+      border-radius: 2px;
+      cursor: pointer;
+      margin-left: 20px; }
+      #search #content div button:hover {
+        background-color: #686de0;
+        color: white; }
+  #search #results {
+    border-top: solid 2px #686de0;
+    width: 100%;
+    padding-top: 40px;
+    margin-top: 80px; }
+    #search #results h4 {
+      font-size: 30px;
+      color: #686de0;
+      margin-bottom: 20px; }
+    #search #results li {
+      font-size: 20px;
+      color: black;
+      margin-bottom: 10px; }
+
+#footer {
+  display: grid;
+  background-color: #686de0;
+  padding: 160px 160px;
+  grid-template-columns: repeat(4, 1fr);
+  color: white; }
+  #footer h2 {
+    font-size: 60px;
+    line-height: 60px;
+    cursor: pointer; }
+    #footer h2:hover {
+      opacity: 0.6; }
+  #footer h3 {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    cursor: pointer; }
+    #footer h3:hover {
+      opacity: 0.6; }
+  #footer h5 {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    cursor: pointer; }
+    #footer h5:hover {
+      opacity: 0.6; }

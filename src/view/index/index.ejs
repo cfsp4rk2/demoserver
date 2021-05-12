@@ -1,7 +1,104 @@
 <%- include('../global/top.ejs'); %>
 
-<section id="temp" class="interface">
+<section id="nav">
+    <h3>BUZZ</h3>
+    <ul>
+        <li>Services</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Careers</li>
+        <li>Portal</li>
+    </ul>
+    <button>Contact Us</button>
+</section>
+
+<section id="hero">
+    <div id="content">
+        <h1>Here for You!</h1>
+        <p>Lorem ipsum  dolor sit amet, consectetur adipisicing elit Lorem ipsum  dolor sit amet, consectetur adipisicing elit Lorem ipsum  dolor sit amet, consectetur adipisicing elit</p>
+        <button>Get in Touch</button>
+    </div>
+    <img id="background-img" src="/img/office.jpg" alt="">
+</section>
+
+<section id="stats">
+    <h2>Our Stats</h2>
+    <div>
+        <div>
+            <h4>263</h4>
+            <p>Happy clients is the basis of our ethos, so the fact that we have 263 five star reviews from clients is a major source of pride for us.</p>
+        </div>
+        <div>
+            <h4>19</h4>
+            <p>Is the number of dedicated media assistants that we employ, allowing us the flexability to be by your side, whenever you need us.</p>
+        </div>
+        <div>
+            <h4>12,000</h4>
+            <p>The main metric that we use to measure the success of our projects is the number of new customers that our clients gain. So far we're just over 12,000</p>
+        </div>
+    </div>
+    <img src="" alt="">
+</section>
+
+<section id="areas">
+    <div>
+        <div id="practice_areas">Practice Areas</div>
+    </div>
+    <div>
+        <ul id="areas_list">
+            <li>Family Law</li>
+            <li>Real Estate Law</li>
+            <li>Immigration Law</li>
+        </ul>
+    </div>
+</section>
+
+<section id="search">
+    <div id="content">
+        <h2>Search our locations</h2>
+        <div>
+            <input type="text" placeholder="Enter Search Here">
+            <button>Search</button>
+        </div>
+    </div>
+
+    <% if (query != "") { %>
+    <div id="results">
+        <% if (results.length === 0) { %>
+        <h4>No results found related to: "<%= query %>"</h4>
+        <% } else { %>
+        <h4>Results related to: "<%= query %>"</h4>
+        <ul>
+            <% for (result of results) { %>
+            <li><%= result %></li>
+            <% } %>
+        </ul>
+        <% } %>
+    </div>
+    <% } %>
 
 </section>
+
+<footer id="footer">
+    <div>
+        <h2>BUZZ</h2>
+    </div>
+    <div>
+        <h3>Areas</h3>
+        <h5>Family Law</h5>
+        <h5>Real Estate Law</h5>
+        <h5>Immigration Law</h5>
+    </div>
+    <div>
+        <h3>About</h3>
+        <h3>Portal</h3>
+        <h3>Contact</h3>
+    </div>
+    <div>
+        <h3>Business Hours</h3>
+        <h5>Mon - Fri: 9am - 5pm</h5>
+        <h5>Sat - Sun: Closed</h5>
+    </div>
+</footer>
 
 <%- include('../global/bottom.ejs'); %>

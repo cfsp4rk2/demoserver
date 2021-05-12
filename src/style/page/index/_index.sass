@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap')
+    
+$dark: #686de0
+
+*
+    font-family: roboto
+    -webkit-transition: ease-in-out background-color 200ms, border-color 200ms, color 200ms, opacity 200ms
+    -moz-transition: ease-in-out background-color 200ms, border-color 200ms, color 200ms, opacity 200ms
+    -ms-transition: ease-in-out background-color 200ms, border-color 200ms, color 200ms, opacity 200ms
+    -o-transition: ease-in-out background-color 200ms, border-color 200ms, color 200ms, opacity 200ms
+    transition: ease-in-out background-color 200ms, border-color 200ms, color 200ms, opacity 200ms
+    
+#nav
+    width: 100%
+    padding: 20px 80px
+    position: absolute
+    top: 0
+    left: 0
+    display: flex
+    justify-content: space-between
+    height: 100px
+    align-items: center
+    z-index: 100
+
+    h3
+        color: white
+        font-size: 30px
+        font-weight: 500
+        cursor: pointer
+
+        &:hover
+            color: $dark
+
+    ul
+        display: flex
+        align-items: center
+
+        li
+            margin-right: 40px
+            color: white
+            font-size: 20px
+            cursor: pointer
+
+            &:hover
+                color: $dark
+
+    button
+        color: white
+        height: 60px
+        padding: 0px 80px
+        border: solid 1px white
+        font-size: 20px
+        border-radius: 2px
+        cursor: pointer
+
+        &:hover
+            background-color: $dark
+            border-color: $dark
+
+#hero
+    align-items: center
+    justify-content: center
+    display: flex
+    position: relative
+    height: 75vh
+    overflow: hidden
+
+    #background-img
+        position: absolute
+        object-fit: cover
+        min-height: 100%
+
+    #content
+        z-index: 10
+        width: 100%
+        color: white
+        padding: 0 160px
+
+        h1
+            font-size: 80px
+            font-weight: 500
+            margin-bottom: 10px
+
+        p
+            font-size: 20px
+            width: 600px
+            margin-bottom: 30px
+
+        button
+            color: white
+            height: 60px
+            padding: 0px 80px
+            font-size: 20px
+            border: solid 1px white
+            cursor: pointer
+            border-radius: 2px
+
+            &:hover
+                background-color: $dark
+                border-color: $dark
+
+#stats
+    padding: 160px 160px
+    background-color: white
+    display: flex
+    flex-direction: column 
+    color: $dark
+
+    h2
+        font-size: 40px
+        font-weight: 500
+        color: $dark
+        margin-bottom: 20px
+
+    & > div
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        gap: 40px
+
+        h4
+            font-size: 50px
+            margin-bottom: 10px
+
+        p
+            font-size: 16px
+            color: black
+
+
+
+
+#areas
+    padding: 160px 160px
+    background-color: $dark
+    display: flex
+
+    & > div
+        width: 50%
+        height: 100%
+
+        #practice_areas
+            width: 80%
+            border-bottom: 2px solid white
+            color: white
+            font-size: 40px
+            font-weight: 500
+
+        #areas_list
+            list-style: none
+
+            li
+                font-size: 50px
+                color: white
+                margin-bottom: 40px
+
+            li:nth-child(3)
+                margin-bottom: 0
+
+#search
+    background-color: white
+    padding: 160px 160px
+
+    #content
+        h2
+            width: 100%
+            font-size: 40px
+            color: $dark
+            margin-bottom: 20px
+
+        div
+            display: flex
+            justify-content: space-between
+
+            input
+                height: 60px
+                font-size: 20px
+                padding: 0px 40px
+                flex-grow: 1
+                border: solid 1px $dark
+
+                &:focus
+                    border: 2px solid $dark
+
+
+            button
+                color: $dark
+                height: 60px
+                padding: 0px 80px
+                border: solid 1px $dark
+                font-size: 20px
+                border-radius: 2px
+                cursor: pointer
+                margin-left: 20px
+
+                &:hover
+                    background-color: $dark
+                    color: white
+
+    #results
+        border-top: solid 2px $dark
+        width: 100%
+        padding-top: 40px
+        margin-top: 80px
+        
+        h4
+            font-size: 30px
+            color: $dark
+            margin-bottom: 20px
+
+        li
+            font-size: 20px
+            color: black
+            margin-bottom: 10px
+
+#footer
+    display: grid
+    background-color: $dark
+    padding: 160px 160px
+    grid-template-columns: repeat(4, 1fr)
+    color: white
+
+    h2
+        font-size: 60px
+        line-height: 60px
+        cursor: pointer
+
+        &:hover
+            opacity: 0.6
+
+    h3
+        font-size: 30px
+        line-height: 30px
+        font-weight: 500
+        margin-bottom: 40px
+        cursor: pointer
+
+        &:hover
+            opacity: 0.6
+
+    h5
+        font-size: 20px
+        line-height: 20px
+        font-weight: 400
+        margin-bottom: 20px
+        cursor: pointer
+
+        &:hover
+            opacity: 0.6
+
