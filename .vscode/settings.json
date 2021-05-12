@@ -1,0 +1,14 @@
+// {
+//     "files.exclude": {
+//         "webpack.config.cjs": true,
+//         "tsconfig.json": true,
+//         "package-lock.json": true,
+//         "nodemon.json": true,
+//         "package.json": true,
+//         ".gitignore": true,
+//         ".env": true,
+//         "node_modules": true,
+
+//         "dist/": true,
+//     }
+// }
