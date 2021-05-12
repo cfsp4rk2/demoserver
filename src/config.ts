@@ -14,31 +14,31 @@ export const ENVIRONMENT = {
 };
 
 export const SERVER = {
-    'SCOPE_NAME': 'comsat',
+    'SCOPE_NAME': 'demoserver',
     'SCOPE_COLOUR': 'FG_BLUE',
     'APPLICATION_NAME': 'server',
     'APPLICATION_COLOUR': 'FG_BLUE',
     'PORT_HTTP': 80,
     'PORT_HTTPS': 443,
-    'HOSTNAME': (ENVIRONMENT.PRODUCTION) ? 'comsat.io' : '127.0.0.1',
+    'HOSTNAME': (ENVIRONMENT.PRODUCTION) ? 'demo.io' : '127.0.0.1',
     'IP_ADDRESS': '0.0.0.0',
     'VIEW_ENGINE': 'ejs',
 };
 
 export const API = {
-    'SCOPE_NAME': 'comsat',
+    'SCOPE_NAME': 'demoserver',
     'SCOPE_COLOUR': 'FG_GREEN',
     'APPLICATION_NAME': 'api',
     'APPLICATION_COLOUR': 'FG_GREEN',
     'PORT_HTTP': 8000,
     'PORT_HTTPS': 8000,
-    'HOSTNAME': (ENVIRONMENT.PRODUCTION) ? 'comsat.io' : '127.0.0.1',
+    'HOSTNAME': (ENVIRONMENT.PRODUCTION) ? 'demo.io' : '127.0.0.1',
     'IP_ADDRESS': '0.0.0.0',
     'PREFIX_V1': '/api/v1'
 };
 
 export const DATABASE = {
-    'NAME': 'comsat',
+    'NAME': 'demoserver',
     'HOSTNAME': '127.0.0.1',
     'PROTOCOL': 'mongodb',
     'PORT': 27017,
