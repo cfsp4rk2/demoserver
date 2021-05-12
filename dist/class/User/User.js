@@ -1,7 +1,6 @@
 import crypto from 'crypto';
 import HttpStatus from '../../lib/HttpStatus/HttpStatus.js';
 import Crypto from '../../lib/Crypto/Crypto.js';
-import Toolbelt from '../../lib/Toolbelt/Toolbelt.js';
 import Database from '../Database/Database.js';
 /**
  * User v0.0.1
@@ -97,9 +96,9 @@ export default class User {
             'codeEmail': { code, 'iat': new Date().getTime() },
         })))
             return;
-        const mailServer = Toolbelt.get('mailServer');
-        if (!(await mailServer.send('User.create', id, { 'CODE': code })))
-            return;
+        console.log(code);
+        // const mailServer = Toolbelt.get('mailServer');
+        // if (!(await mailServer.send('User.create', id, { 'CODE': code }))) return;
     }
     /**
      * Confirms the users email address.
@@ -322,9 +321,7 @@ export default class User {
             'codePassword': { code, 'iat': new Date().getTime() },
         })))
             return;
-        const mailServer = Toolbelt.get('mailServer');
-        if (!(await mailServer.send('User.resetPasswordRequest', id, { 'CODE': code })))
-            return;
+        console.log(code);
     }
     /**
      * Updates the users password.

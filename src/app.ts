@@ -9,9 +9,7 @@ import HttpHeader from './lib/HttpHeader/HttpHeader.js';
 import ExpressRouterApi from './lib/ExpressRouter/ExpressRouter.js';
 import ExpressRouterServer from './lib/ExpressRouterTemp/ExpressRouter.js';
 import MongoDatabase from './lib/MongoDatabase/MongoDatabase.js';
-import MailServer from './lib/MailServer/MailServer.js';
 import Log from './lib/Log/Log.js';
-import Toolbelt from './lib/Toolbelt/Toolbelt.js';
 
 // Classes.
 import Database from './class/Database/Database.js';
@@ -106,39 +104,39 @@ const mongoDatabase = await new MongoDatabase({
 
 }).initialise();
 
-const mailServer = new MailServer({
-    'log': apiLog,
-    'hostname': MAIL.HOSTNAME,
-    'port': MAIL.PORT,
-    'username': ENVIRONMENT.MAIL_USERNAME,
-    'password': ENVIRONMENT.MAIL_PASSWORD,
-});
+// const mailServer = new MailServer({
+//     'log': apiLog,
+//     'hostname': MAIL.HOSTNAME,
+//     'port': MAIL.PORT,
+//     'username': ENVIRONMENT.MAIL_USERNAME,
+//     'password': ENVIRONMENT.MAIL_PASSWORD,
+// });
 
-mailServer.newTemplate('User.create', {
-    'sender': 'comsat',
-    'subject': 'Create User',
-    'htmlMessage': {
-        'path': `${DIRECTORY.EMAIL}/user/create/create.html`,
-        'variables': ['CODE'],
-    },
-    'textMessage': {
-        'path': `${DIRECTORY.EMAIL}/user/create/create.txt`,
-        'variables': ['CODE'],
-    },
-});
+// mailServer.newTemplate('User.create', {
+//     'sender': 'comsat',
+//     'subject': 'Create User',
+//     'htmlMessage': {
+//         'path': `${DIRECTORY.EMAIL}/user/create/create.html`,
+//         'variables': ['CODE'],
+//     },
+//     'textMessage': {
+//         'path': `${DIRECTORY.EMAIL}/user/create/create.txt`,
+//         'variables': ['CODE'],
+//     },
+// });
 
-mailServer.newTemplate('User.resetPassword', {
-    'sender': 'comsat',
-    'subject': 'Reset Password',
-    'htmlMessage': {
-        'path': `${DIRECTORY.EMAIL}/user/resetPassword/resetPassword.html`,
-        'variables': ['CODE'],
-    },
-    'textMessage': {
-        'path': `${DIRECTORY.EMAIL}/user/resetPassword/resetPassword.txt`,
-        'variables': ['CODE'],
-    },
-});
+// mailServer.newTemplate('User.resetPassword', {
+//     'sender': 'comsat',
+//     'subject': 'Reset Password',
+//     'htmlMessage': {
+//         'path': `${DIRECTORY.EMAIL}/user/resetPassword/resetPassword.html`,
+//         'variables': ['CODE'],
+//     },
+//     'textMessage': {
+//         'path': `${DIRECTORY.EMAIL}/user/resetPassword/resetPassword.txt`,
+//         'variables': ['CODE'],
+//     },
+// });
 
 ExpressRouterServer.initialise({
     'log': serverLog,
@@ -148,7 +146,7 @@ ExpressRouterApi.initialise({
     'log': apiLog,
 });
 
-Toolbelt.set('mailServer', mailServer);
+// Toolbelt.set('mailServer', mailServer);
 
 // ------------------------------ Library setup.
 

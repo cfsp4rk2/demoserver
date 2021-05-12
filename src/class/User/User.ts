@@ -3,7 +3,6 @@ import crypto from 'crypto';
 
 import HttpStatus from '../../lib/HttpStatus/HttpStatus.js';
 import Crypto from '../../lib/Crypto/Crypto.js';
-import Toolbelt from '../../lib/Toolbelt/Toolbelt.js';
 
 import Database from '../Database/Database.js';
 
@@ -175,9 +174,11 @@ export default class User {
             'codeEmail': { code, 'iat': new Date().getTime() },
         }))) return;
 
-        const mailServer = Toolbelt.get('mailServer');
+        console.log(code);
 
-        if (!(await mailServer.send('User.create', id, { 'CODE': code }))) return;
+        // const mailServer = Toolbelt.get('mailServer');
+
+        // if (!(await mailServer.send('User.create', id, { 'CODE': code }))) return;
     }
 
     /**
@@ -472,9 +473,7 @@ export default class User {
             'codePassword': { code, 'iat': new Date().getTime() },
         }))) return;
 
-        const mailServer = Toolbelt.get('mailServer');
-
-        if (!(await mailServer.send('User.resetPasswordRequest', id, { 'CODE': code }))) return;
+        console.log(code);
     }
 
     /**
