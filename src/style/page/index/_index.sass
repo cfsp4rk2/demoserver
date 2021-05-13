@@ -128,32 +128,37 @@ $dark: #686de0
 
 
 
-#areas
+#people
     padding: 160px 160px
     background-color: $dark
     display: flex
+    flex-wrap: wrap
+
+    h2
+        width: 100%
+        font-size: 40px
+        color: white
+        margin-bottom: 40px
+
 
     & > div
         width: 50%
-        height: 100%
+        align-items: center
+        display: flex
+        flex-direction: column
+        color: white
 
-        #practice_areas
-            width: 80%
-            border-bottom: 2px solid white
-            color: white
-            font-size: 40px
-            font-weight: 500
+        img
+            border-radius: 50%
+            width: 60%
+            margin-bottom: 30px
 
-        #areas_list
-            list-style: none
+        h4
+            font-size: 30px
+            margin-bottom: 5px
 
-            li
-                font-size: 50px
-                color: white
-                margin-bottom: 40px
-
-            li:nth-child(3)
-                margin-bottom: 0
+        h5
+            font-size: 20px
 
 #search
     background-color: white
@@ -214,7 +219,7 @@ $dark: #686de0
 #footer
     display: grid
     background-color: $dark
-    padding: 160px 160px
+    padding: 160px 80px
     grid-template-columns: repeat(4, 1fr)
     color: white
 
@@ -246,3 +251,6 @@ $dark: #686de0
         &:hover
             opacity: 0.6
 
+
+    a
+        color: inherit

@@ -146,27 +146,31 @@ a {
       font-size: 16px;
       color: black; }
 
-#areas {
+#people {
   padding: 160px 160px;
   background-color: #686de0;
-  display: flex; }
-  #areas > div {
+  display: flex;
+  flex-wrap: wrap; }
+  #people h2 {
+    width: 100%;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 40px; }
+  #people > div {
     width: 50%;
-    height: 100%; }
-    #areas > div #practice_areas {
-      width: 80%;
-      border-bottom: 2px solid white;
-      color: white;
-      font-size: 40px;
-      font-weight: 500; }
-    #areas > div #areas_list {
-      list-style: none; }
-      #areas > div #areas_list li {
-        font-size: 50px;
-        color: white;
-        margin-bottom: 40px; }
-      #areas > div #areas_list li:nth-child(3) {
-        margin-bottom: 0; }
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: white; }
+    #people > div img {
+      border-radius: 50%;
+      width: 60%;
+      margin-bottom: 30px; }
+    #people > div h4 {
+      font-size: 30px;
+      margin-bottom: 5px; }
+    #people > div h5 {
+      font-size: 20px; }
 
 #search {
   background-color: white;
@@ -216,7 +220,7 @@ a {
 #footer {
   display: grid;
   background-color: #686de0;
-  padding: 160px 160px;
+  padding: 160px 80px;
   grid-template-columns: repeat(4, 1fr);
   color: white; }
   #footer h2 {
@@ -241,3 +245,5 @@ a {
     cursor: pointer; }
     #footer h5:hover {
       opacity: 0.6; }
+  #footer a {
+    color: inherit; }

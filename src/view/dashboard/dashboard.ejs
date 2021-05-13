@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Windmill Dashboard</title>
+    <title>BUZZ Media Dashboard</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
@@ -39,7 +39,7 @@
             class="ml-6 text-lg font-bold text-gray-800 dark:text-gray-200"
             href="#"
           >
-            Windmill
+            BUZZ Media
           </a>
           <ul class="mt-6">
             <li class="relative px-6 py-3">
@@ -89,7 +89,7 @@
                     d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
                   ></path>
                 </svg>
-                <span class="ml-4">Forms</span>
+                <span class="ml-4">Posts</span>
               </a>
             </li>
             <li class="relative px-6 py-3">
@@ -111,7 +111,7 @@
                     d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
                   ></path>
                 </svg>
-                <span class="ml-4">Cards</span>
+                <span class="ml-4">Plugins</span>
               </a>
             </li>
             <li class="relative px-6 py-3">
@@ -134,7 +134,7 @@
                   ></path>
                   <path d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path>
                 </svg>
-                <span class="ml-4">Charts</span>
+                <span class="ml-4">Sales</span>
               </a>
             </li>
             <li class="relative px-6 py-3">
@@ -156,7 +156,7 @@
                     d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"
                   ></path>
                 </svg>
-                <span class="ml-4">Buttons</span>
+                <span class="ml-4">Settings</span>
               </a>
             </li>
             <li class="relative px-6 py-3">
@@ -178,7 +178,7 @@
                     d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
                   ></path>
                 </svg>
-                <span class="ml-4">Modals</span>
+                <span class="ml-4">SEO</span>
               </a>
             </li>
             <li class="relative px-6 py-3">
@@ -198,7 +198,7 @@
                 >
                   <path d="M4 6h16M4 10h16M4 14h16M4 18h16"></path>
                 </svg>
-                <span class="ml-4">Tables</span>
+                <span class="ml-4">Media</span>
               </a>
             </li>
             <li class="relative px-6 py-3">
@@ -257,7 +257,7 @@
                     class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
                   >
                     <a class="w-full" href="pages/create-account.html">
-                      Create account
+                      Install Plugin
                     </a>
                   </li>
                   <li
@@ -283,9 +283,10 @@
           </ul>
           <div class="px-6 my-6">
             <button
-              class="flex items-center justify-between w-full px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
+             id="uploadFile" style="position: relative;" class="flex items-center justify-between w-full px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
             >
-              Create account
+            <input type="file" style="position:absolute; width:100%; height:100%; z-index:10; opacity:0; cursor:pointer;"> 
+            Install Plugin
               <span class="ml-2" aria-hidden="true">+</span>
             </button>
           </div>
@@ -320,7 +321,7 @@
             class="ml-6 text-lg font-bold text-gray-800 dark:text-gray-200"
             href="#"
           >
-            Windmill
+            BUZZ Media
           </a>
           <ul class="mt-6">
             <li class="relative px-6 py-3">
@@ -851,7 +852,7 @@
                     d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
                   ></path>
                 </svg>
-                <span>Star this project on GitHub</span>
+                <span>View recommended plugins</span>
               </div>
               <span>View more &RightArrow;</span>
             </a>
@@ -1003,7 +1004,7 @@
                             ></div>
                           </div>
                           <div>
-                            <p class="font-semibold">Hans Burger</p>
+                            <p class="font-semibold">David Hughes</p>
                             <p class="text-xs text-gray-600 dark:text-gray-400">
                               10x Developer
                             </p>
@@ -1044,7 +1045,7 @@
                             ></div>
                           </div>
                           <div>
-                            <p class="font-semibold">Jolina Angelie</p>
+                            <p class="font-semibold">Gabby Crawford</p>
                             <p class="text-xs text-gray-600 dark:text-gray-400">
                               Unemployed
                             </p>
@@ -1085,7 +1086,7 @@
                             ></div>
                           </div>
                           <div>
-                            <p class="font-semibold">Sarah Curry</p>
+                            <p class="font-semibold">Sarah Mason</p>
                             <p class="text-xs text-gray-600 dark:text-gray-400">
                               Designer
                             </p>
@@ -1126,7 +1127,7 @@
                             ></div>
                           </div>
                           <div>
-                            <p class="font-semibold">Rulia Joberts</p>
+                            <p class="font-semibold">Rita Cooper</p>
                             <p class="text-xs text-gray-600 dark:text-gray-400">
                               Actress
                             </p>
@@ -1167,7 +1168,7 @@
                             ></div>
                           </div>
                           <div>
-                            <p class="font-semibold">Wenzel Dashington</p>
+                            <p class="font-semibold">Christopher Farmer</p>
                             <p class="text-xs text-gray-600 dark:text-gray-400">
                               Actor
                             </p>
@@ -1208,7 +1209,7 @@
                             ></div>
                           </div>
                           <div>
-                            <p class="font-semibold">Dave Li</p>
+                            <p class="font-semibold">Andrew Flores</p>
                             <p class="text-xs text-gray-600 dark:text-gray-400">
                               Influencer
                             </p>
@@ -1249,7 +1250,7 @@
                             ></div>
                           </div>
                           <div>
-                            <p class="font-semibold">Maria Ramovic</p>
+                            <p class="font-semibold">Maria Ross</p>
                             <p class="text-xs text-gray-600 dark:text-gray-400">
                               Runner
                             </p>
@@ -1290,7 +1291,7 @@
                             ></div>
                           </div>
                           <div>
-                            <p class="font-semibold">Hitney Wouston</p>
+                            <p class="font-semibold">Amelia Bauer</p>
                             <p class="text-xs text-gray-600 dark:text-gray-400">
                               Singer
                             </p>
@@ -1331,7 +1332,7 @@
                             ></div>
                           </div>
                           <div>
-                            <p class="font-semibold">Hans Burger</p>
+                            <p class="font-semibold">Josh Owen</p>
                             <p class="text-xs text-gray-600 dark:text-gray-400">
                               10x Developer
                             </p>
@@ -1464,7 +1465,7 @@
                 class="min-w-0 p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800"
               >
                 <h4 class="mb-4 font-semibold text-gray-800 dark:text-gray-300">
-                  Revenue
+                  Traffic Sources
                 </h4>
                 <canvas id="pie"></canvas>
                 <div
@@ -1475,19 +1476,19 @@
                     <span
                       class="inline-block w-3 h-3 mr-1 bg-blue-500 rounded-full"
                     ></span>
-                    <span>Shirts</span>
+                    <span>Social Media</span>
                   </div>
                   <div class="flex items-center">
                     <span
                       class="inline-block w-3 h-3 mr-1 bg-teal-600 rounded-full"
                     ></span>
-                    <span>Shoes</span>
+                    <span>Google Ads</span>
                   </div>
                   <div class="flex items-center">
                     <span
                       class="inline-block w-3 h-3 mr-1 bg-purple-600 rounded-full"
                     ></span>
-                    <span>Bags</span>
+                    <span>Email Campaigns</span>
                   </div>
                 </div>
               </div>
