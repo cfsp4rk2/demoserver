@@ -1156,6 +1156,44 @@ Log._APPLICATION_NAME = 'COMSAT';
 
 /***/ }),
 
+/***/ "./dist/js/class/Search/Search.js":
+/*!****************************************!*\
+  !*** ./dist/js/class/Search/Search.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Search; });
+class Search {
+    constructor() {
+        this._searchBox = document.getElementById('searchBox');
+        this._searchButton = document.getElementById('searchButton');
+        this._URL = window.location.href;
+        if (this._URL.includes('search='))
+            this._scrollToSearch();
+        this._searchButton.addEventListener('click', () => this._search());
+    }
+    ;
+    _search() {
+        const query = this._searchBox.value || '';
+        if (query === '')
+            return;
+        window.location.replace(`http://127.0.0.1/?search=${query}`); // UPDATE WITH HOSTNAME
+    }
+    ;
+    async _scrollToSearch() {
+        console.log('Scrolling');
+        await new Promise((resolve, reject) => { setTimeout(resolve, 100); });
+        document.getElementById('search').scrollIntoView();
+    }
+    ;
+}
+
+
+/***/ }),
+
 /***/ "./dist/js/lib/Form/Form.js":
 /*!**********************************!*\
   !*** ./dist/js/lib/Form/Form.js ***!
@@ -1284,8 +1322,11 @@ class GlobalRouter {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return IndexRouter; });
+/* harmony import */ var _class_Search_Search_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../class/Search/Search.js */ "./dist/js/class/Search/Search.js");
+
 class IndexRouter {
     static initialise() {
+        new _class_Search_Search_js__WEBPACK_IMPORTED_MODULE_0__["default"]();
     }
 }
 

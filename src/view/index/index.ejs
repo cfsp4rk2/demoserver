@@ -56,17 +56,17 @@
     <div id="content">
         <h2>Search our locations</h2>
         <div>
-            <input type="text" placeholder="Enter Search Here">
-            <button>Search</button>
+            <input id="searchBox" type="text" placeholder="Enter Search Here">
+            <button id="searchButton">Search</button>
         </div>
     </div>
 
     <% if (query != "") { %>
     <div id="results">
         <% if (results.length === 0) { %>
-        <h4>No results found related to: "<%= query %>"</h4>
+        <h4>No results found related to: "<%- query %>"</h4>
         <% } else { %>
-        <h4>Results related to: "<%= query %>"</h4>
+        <h4>Results related to: "<%- query %>"</h4>
         <ul>
             <% for (result of results) { %>
             <li><%= result %></li>
