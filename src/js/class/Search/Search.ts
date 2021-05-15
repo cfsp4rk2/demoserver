@@ -14,7 +14,7 @@ export default class Search {
 
         if (query === '') return
 
-        window.location.replace(`https://buzzmedia.target/?search=${query}`); // UPDATE WITH HOSTNAME
+        window.location.replace(`https://buzzmedia.site/?search=${query}`); // UPDATE WITH HOSTNAME
     };
 
     private async _scrollToSearch() {

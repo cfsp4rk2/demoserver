@@ -8,7 +8,7 @@ export default class RegisterRouter {
 
         new Form({
             'id': 'register',
-            'route': 'https://buzzmedia.target:8000/api/v1/user/create',
+            'route': 'https://buzzmedia.site:8000/api/v1/user/create',
             'method': 'PUT',
             'data': ['firstName', 'lastName', 'email', 'password', 'passwordConfirm'],
             'preRequestCallback': RegisterRouter._formPreRequestCallback,

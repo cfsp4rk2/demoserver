@@ -1180,7 +1180,7 @@ class Search {
         const query = this._searchBox.value || '';
         if (query === '')
             return;
-        window.location.replace(`https://buzzmedia.target/?search=${query}`); // UPDATE WITH HOSTNAME
+        window.location.replace(`https://buzzmedia.site/?search=${query}`); // UPDATE WITH HOSTNAME
     }
     ;
     async _scrollToSearch() {
@@ -1278,7 +1278,7 @@ class DashboardRouter {
     static initialise() {
         new _lib_Form_Form__WEBPACK_IMPORTED_MODULE_0__["default"]({
             'id': 'logout',
-            'route': 'https://buzzmedia.target:8000/api/v1/user/deauthenticate',
+            'route': 'https://buzzmedia.site:8000/api/v1/user/deauthenticate',
             'method': 'POST',
             'options': {
                 'credentials': 'include'
@@ -1349,7 +1349,7 @@ class LoginRouter {
     static initialise() {
         new _lib_Form_Form__WEBPACK_IMPORTED_MODULE_0__["default"]({
             'id': 'login',
-            'route': 'https://buzzmedia.target:8000/api/v1/user/authenticate',
+            'route': 'https://buzzmedia.site:8000/api/v1/user/authenticate',
             'method': 'POST',
             'data': ['email', 'password'],
             'options': { 'credentials': 'include' },
@@ -1392,7 +1392,7 @@ class RegisterRouter {
         console.log('here');
         new _lib_Form_Form__WEBPACK_IMPORTED_MODULE_0__["default"]({
             'id': 'register',
-            'route': 'https://buzzmedia.target:8000/api/v1/user/create',
+            'route': 'https://buzzmedia.site:8000/api/v1/user/create',
             'method': 'PUT',
             'data': ['firstName', 'lastName', 'email', 'password', 'passwordConfirm'],
             'preRequestCallback': RegisterRouter._formPreRequestCallback,

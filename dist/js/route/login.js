@@ -3,7 +3,7 @@ export default class LoginRouter {
     static initialise() {
         new Form({
             'id': 'login',
-            'route': 'https://buzzmedia.target:8000/api/v1/user/authenticate',
+            'route': 'https://buzzmedia.site:8000/api/v1/user/authenticate',
             'method': 'POST',
             'data': ['email', 'password'],
             'options': { 'credentials': 'include' },

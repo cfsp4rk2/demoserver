@@ -19,7 +19,7 @@ export const SERVER = {
     'APPLICATION_COLOUR': 'FG_BLUE',
     'PORT_HTTP': 80,
     'PORT_HTTPS': 443,
-    'HOSTNAME': (ENVIRONMENT.PRODUCTION) ? 'buzzmedia.target' : '127.0.0.1',
+    'HOSTNAME': (ENVIRONMENT.PRODUCTION) ? 'buzzmedia.site' : '127.0.0.1',
     'IP_ADDRESS': '0.0.0.0',
     'VIEW_ENGINE': 'ejs',
 };
@@ -30,7 +30,7 @@ export const API = {
     'APPLICATION_COLOUR': 'FG_GREEN',
     'PORT_HTTP': 8000,
     'PORT_HTTPS': 8000,
-    'HOSTNAME': (ENVIRONMENT.PRODUCTION) ? 'buzzmedia.target' : '127.0.0.1',
+    'HOSTNAME': (ENVIRONMENT.PRODUCTION) ? 'buzzmedia.site' : '127.0.0.1',
     'IP_ADDRESS': '0.0.0.0',
     'PREFIX_V1': '/api/v1'
 };
