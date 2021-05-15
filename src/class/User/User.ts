@@ -394,13 +394,13 @@ export default class User {
             if (!(user)) {
                 HttpStatus.code(response, 'UNAUTHORIZED');
 
-                return reject({ 'error': User._ERROR_LOOKUP.AUTHENTICATE });
+                return reject({ 'error': 'The specified user does not exist.' });
             }
     
             if (!(await Crypto.compareHash(password, user.password))) {
                 HttpStatus.code(response, 'UNAUTHORIZED');
 
-                return reject({ 'error': User._ERROR_LOOKUP.AUTHENTICATE });
+                return reject({ 'error': 'Password incorrect.' });
             }
     
             const payload = {
