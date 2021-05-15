@@ -236,8 +236,8 @@ export default class User {
         request.user = user;
         const updatedAccessToken = Crypto.jwtSign(request.user, User._jwtSecret);
         response.cookie('accessToken', updatedAccessToken, {
-            'httpOnly': User._productionFlag,
-            'sameSite': User._productionFlag
+            'httpOnly': false,
+            'sameSite': false
         });
         next();
     }
@@ -272,8 +272,8 @@ export default class User {
             };
             const accessToken = Crypto.jwtSign(payload, User._jwtSecret);
             response.cookie('accessToken', accessToken, {
-                'httpOnly': User._productionFlag,
-                'sameSite': User._productionFlag
+                'httpOnly': false,
+                'sameSite': false
             });
             return resolve(true);
         });
@@ -296,8 +296,8 @@ export default class User {
             }
             response.cookie('accessToken', 'deleted', {
                 'maxAge': 0,
-                'httpOnly': User._productionFlag,
-                'sameSite': User._productionFlag,
+                'httpOnly': false,
+                'sameSite': false,
             });
             return resolve(true);
         });
