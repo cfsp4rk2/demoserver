@@ -59,7 +59,7 @@ const apiLog = new Log({
 const httpHeader = new HttpHeader({
     'log': serverLog,
     'setHeaders': {
-        'Access-Control-Allow-Origin': 'http://127.0.0.1',
+        'Access-Control-Allow-Origin': '*',
         'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE',
         'Access-Control-Allow-Headers': 'Content-Type',
         'Access-Control-Allow-Credentials': 'true',
