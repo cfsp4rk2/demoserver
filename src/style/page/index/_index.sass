@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap')
     
-$dark: #686de0
+$dark: #101D42
 
 *
     font-family: roboto
@@ -9,7 +9,7 @@ $dark: #686de0
     -ms-transition: ease-in-out background-color 200ms, border-color 200ms, color 200ms, opacity 200ms
     -o-transition: ease-in-out background-color 200ms, border-color 200ms, color 200ms, opacity 200ms
     transition: ease-in-out background-color 200ms, border-color 200ms, color 200ms, opacity 200ms
-    
+
 #nav
     width: 100%
     padding: 20px 80px
@@ -29,7 +29,7 @@ $dark: #686de0
         cursor: pointer
 
         &:hover
-            color: $dark
+            opacity: 0.6
 
     ul
         display: flex
@@ -42,13 +42,15 @@ $dark: #686de0
             cursor: pointer
 
             &:hover
-                color: $dark
+                opacity: 0.6
 
     button
         color: white
         height: 60px
         padding: 0px 80px
-        border: solid 1px white
+        border-style: solid
+        border-width: 2px
+        border-color: white
         font-size: 20px
         border-radius: 2px
         cursor: pointer
@@ -56,6 +58,10 @@ $dark: #686de0
         &:hover
             background-color: $dark
             border-color: $dark
+
+@media only screen and (min-width: 1400px)
+    #nav
+        padding: 20px 400px
 
 #hero
     align-items: center
@@ -70,7 +76,7 @@ $dark: #686de0
         object-fit: cover
         min-height: 100%
 
-    #content
+    .content
         z-index: 10
         width: 100%
         color: white
@@ -91,13 +97,19 @@ $dark: #686de0
             height: 60px
             padding: 0px 80px
             font-size: 20px
-            border: solid 1px white
+            border-style: solid
+            border-width: 2px
+            border-color: white
             cursor: pointer
             border-radius: 2px
 
             &:hover
                 background-color: $dark
                 border-color: $dark
+
+@media only screen and (min-width: 1400px)
+    #hero .content
+        padding: 0 600px
 
 #stats
     padding: 160px 160px
@@ -124,9 +136,6 @@ $dark: #686de0
         p
             font-size: 16px
             color: black
-
-
-
 
 #people
     padding: 160px 160px
@@ -164,7 +173,7 @@ $dark: #686de0
     background-color: white
     padding: 160px 160px
 
-    #content
+    .content
         h2
             width: 100%
             font-size: 40px
@@ -180,25 +189,28 @@ $dark: #686de0
                 font-size: 20px
                 padding: 0px 40px
                 flex-grow: 1
-                border: solid 1px $dark
+                border: solid 2px $dark
 
                 &:focus
                     border: 2px solid $dark
 
-
             button
-                color: $dark
+                color: white
                 height: 60px
                 padding: 0px 80px
-                border: solid 1px $dark
+                border-style: solid
+                border-width: 2px
+                background-color: $dark
+                border-color: $dark
                 font-size: 20px
                 border-radius: 2px
                 cursor: pointer
                 margin-left: 20px
 
                 &:hover
-                    background-color: $dark
-                    color: white
+                    background-color: white
+                    border-color: $dark
+                    color: $dark
 
     #results
         border-top: solid 2px $dark
@@ -215,6 +227,10 @@ $dark: #686de0
             font-size: 20px
             color: black
             margin-bottom: 10px
+
+@media only screen and (min-width: 1400px)
+    .container
+        padding: 160px 600px !important
 
 #footer
     display: grid
@@ -254,3 +270,7 @@ $dark: #686de0
 
     a
         color: inherit
+
+@media only screen and (min-width: 1400px)
+    #footer
+        padding: 160px 400px

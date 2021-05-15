@@ -1,4 +1,4 @@
-export default class Comsat {
+export default class Buzz Media {
     static initialise() {
     }
     ;

@@ -6,7 +6,7 @@ This is the start of the network mapping web tool I originally nicknamed Omni.
 
 I am going to build this in the web as a temporary solution, and eventually port it over to the desktop graphics engine I am making called Zone.
 
-I could potentially call it schema. Maybe sputnik. Maybe comsat? Comsat.io is available.
+I could potentially call it schema. Maybe sputnik. Maybe comsat? Buzz Media.io is available.
 
 Lets call it comsat for now. Communications satellite, its about seeing your organisation from multiple views, the network, the social and the physical.
 

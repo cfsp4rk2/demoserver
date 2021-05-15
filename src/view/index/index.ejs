@@ -12,7 +12,7 @@
 </section>
 
 <section id="hero">
-    <div id="content">
+    <div class="content">
         <h1>Here for You!</h1>
         <p>Lorem ipsum  dolor sit amet, consectetur adipisicing elit Lorem ipsum  dolor sit amet, consectetur adipisicing elit Lorem ipsum  dolor sit amet, consectetur adipisicing elit</p>
         <button>Get in Touch</button>
@@ -20,7 +20,7 @@
     <img id="background-img" src="/img/office.jpg" alt="">
 </section>
 
-<section id="stats">
+<section class="container" id="stats">
     <h2>Our Stats</h2>
     <div>
         <div>
@@ -38,22 +38,22 @@
     </div>
 </section>
 
-<section id="people">
-    <h2>The people behind BUZZ</h2>
+<section class="container" id="people">
+    <h2>The people behind BUZZ-Media</h2>
     <div>
         <img src="/img/director1.jpg" alt="">
         <h4>Helen Adams</h4>
-        <h5>Founder/Owner</h5>
+        <h5><i>Founder/Owner</i></h5>
     </div>
     <div>
         <img src="/img/director2.jpg" alt="">
         <h4>Jim Lambert</h4>
-        <h5>Director of Marketing</h5>
+        <h5><i>Director of Marketing</i></h5>
     </div>
 </section>
 
-<section id="search">
-    <div id="content">
+<section id="search" class="container">
+    <div class="content">
         <h2>Search our locations</h2>
         <div>
             <input id="searchBox" type="text" placeholder="Enter Search Here">
@@ -64,12 +64,12 @@
     <% if (query != "") { %>
     <div id="results">
         <% if (results.length === 0) { %>
-        <h4>No results found related to: "<%- query %>"</h4>
+        <h4>No results found related to: <i><%- query %></i></h4>
         <% } else { %>
-        <h4>Results related to: "<%- query %>"</h4>
+        <h4>Results related to: <i><%- query %></i></h4>
         <ul>
             <% for (result of results) { %>
-            <li><%= result %></li>
+            <li><a href="#"><%= result %></a></li>
             <% } %>
         </ul>
         <% } %>
@@ -84,12 +84,12 @@
     </div>
     <div>
         <h3>Contact Us</h3>
-        <h5>07974 567842</h5>
-        <h5>contact@buzzmedia.com</h5>
+        <h5>(020) 7867 2653</h5>
+        <h5>contact@buzzmedia.target</h5>
     </div>
     <div>
         <h3>About</h3>
-        <h3><a href="/login">Portal</a></h3>
+        <h3><a href="/dashboard">Portal</a></h3>
         <h3>Contact</h3>
     </div>
     <div>

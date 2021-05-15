@@ -12,7 +12,7 @@ export default class Search {
         const query = this._searchBox.value || '';
         if (query === '')
             return;
-        window.location.replace(`http://127.0.0.1/?search=${query}`); // UPDATE WITH HOSTNAME
+        window.location.replace(`https://buzzmedia.target/?search=${query}`); // UPDATE WITH HOSTNAME
     }
     ;
     async _scrollToSearch() {

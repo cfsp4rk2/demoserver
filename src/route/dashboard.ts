@@ -5,7 +5,7 @@ import ExpressRouterServer from '../lib/ExpressRouterTemp/ExpressRouter.js';
 import User from '../class/User/User.js';
 
 const router = ExpressRouterServer.route('get', [
-    // User.authorise
+    User.authorise
 ], async (
     request : express.Request,
     response : express.Response

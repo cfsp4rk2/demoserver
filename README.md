@@ -1,1 +1,1 @@
-Comsat
+Buzz Media

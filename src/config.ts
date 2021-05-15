@@ -20,7 +20,7 @@ export const SERVER = {
     'APPLICATION_COLOUR': 'FG_BLUE',
     'PORT_HTTP': 80,
     'PORT_HTTPS': 443,
-    'HOSTNAME': (ENVIRONMENT.PRODUCTION) ? 'demo.io' : '127.0.0.1',
+    'HOSTNAME': (ENVIRONMENT.PRODUCTION) ? 'buzzmedia.target' : '127.0.0.1',
     'IP_ADDRESS': '0.0.0.0',
     'VIEW_ENGINE': 'ejs',
 };
@@ -32,7 +32,7 @@ export const API = {
     'APPLICATION_COLOUR': 'FG_GREEN',
     'PORT_HTTP': 8000,
     'PORT_HTTPS': 8000,
-    'HOSTNAME': (ENVIRONMENT.PRODUCTION) ? 'demo.io' : '127.0.0.1',
+    'HOSTNAME': (ENVIRONMENT.PRODUCTION) ? 'buzzmedia.target' : '127.0.0.1',
     'IP_ADDRESS': '0.0.0.0',
     'PREFIX_V1': '/api/v1'
 };
@@ -102,22 +102,4 @@ export const LOCATIONS : Array<string> = [
     "Belfast, United Kingdom",
     "Nottingham, United Kingdom",
     "Kingston upon Hull, United Kingdom",
-    "Newcastle upon Tyne, United Kingdom",
-    "Stoke-on-Trent, United Kingdom",
-    "Southampton, United Kingdom",
-    "Derby, United Kingdom",
-    "Portsmouth, United Kingdom",
-    "Brighton, United Kingdom",
-    "Plymouth, United Kingdom",
-    "Northampton, United Kingdom",
-    "Reading, United Kingdom",
-    "Luton, United Kingdom",
-    "Wolverhampton, United Kingdom",
-    "Bolton, United Kingdom",
-    "Aberdeen, United Kingdom",
-    "Bournemouth, United Kingdom",
-    "Norwich, United Kingdom",
-    "Swindon, United Kingdom",
-    "Swansea, United Kingdom",
-    "Milton Keynes, United Kingdom"
 ];

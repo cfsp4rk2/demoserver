@@ -65,7 +65,7 @@ a {
     font-weight: 500;
     cursor: pointer; }
     #nav h3:hover {
-      color: #686de0; }
+      opacity: 0.6; }
   #nav ul {
     display: flex;
     align-items: center; }
@@ -75,18 +75,24 @@ a {
       font-size: 20px;
       cursor: pointer; }
       #nav ul li:hover {
-        color: #686de0; }
+        opacity: 0.6; }
   #nav button {
     color: white;
     height: 60px;
     padding: 0px 80px;
-    border: solid 1px white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
     font-size: 20px;
     border-radius: 2px;
     cursor: pointer; }
     #nav button:hover {
-      background-color: #686de0;
-      border-color: #686de0; }
+      background-color: #101D42;
+      border-color: #101D42; }
+
+@media only screen and (min-width: 1400px) {
+  #nav {
+    padding: 20px 400px; } }
 
 #hero {
   align-items: center;
@@ -99,41 +105,47 @@ a {
     position: absolute;
     object-fit: cover;
     min-height: 100%; }
-  #hero #content {
+  #hero .content {
     z-index: 10;
     width: 100%;
     color: white;
     padding: 0 160px; }
-    #hero #content h1 {
+    #hero .content h1 {
       font-size: 80px;
       font-weight: 500;
       margin-bottom: 10px; }
-    #hero #content p {
+    #hero .content p {
       font-size: 20px;
       width: 600px;
       margin-bottom: 30px; }
-    #hero #content button {
+    #hero .content button {
       color: white;
       height: 60px;
       padding: 0px 80px;
       font-size: 20px;
-      border: solid 1px white;
+      border-style: solid;
+      border-width: 2px;
+      border-color: white;
       cursor: pointer;
       border-radius: 2px; }
-      #hero #content button:hover {
-        background-color: #686de0;
-        border-color: #686de0; }
+      #hero .content button:hover {
+        background-color: #101D42;
+        border-color: #101D42; }
+
+@media only screen and (min-width: 1400px) {
+  #hero .content {
+    padding: 0 600px; } }
 
 #stats {
   padding: 160px 160px;
   background-color: white;
   display: flex;
   flex-direction: column;
-  color: #686de0; }
+  color: #101D42; }
   #stats h2 {
     font-size: 40px;
     font-weight: 500;
-    color: #686de0;
+    color: #101D42;
     margin-bottom: 20px; }
   #stats > div {
     display: grid;
@@ -148,7 +160,7 @@ a {
 
 #people {
   padding: 160px 160px;
-  background-color: #686de0;
+  background-color: #101D42;
   display: flex;
   flex-wrap: wrap; }
   #people h2 {
@@ -175,51 +187,59 @@ a {
 #search {
   background-color: white;
   padding: 160px 160px; }
-  #search #content h2 {
+  #search .content h2 {
     width: 100%;
     font-size: 40px;
-    color: #686de0;
+    color: #101D42;
     margin-bottom: 20px; }
-  #search #content div {
+  #search .content div {
     display: flex;
     justify-content: space-between; }
-    #search #content div input {
+    #search .content div input {
       height: 60px;
       font-size: 20px;
       padding: 0px 40px;
       flex-grow: 1;
-      border: solid 1px #686de0; }
-      #search #content div input:focus {
-        border: 2px solid #686de0; }
-    #search #content div button {
-      color: #686de0;
+      border: solid 2px #101D42; }
+      #search .content div input:focus {
+        border: 2px solid #101D42; }
+    #search .content div button {
+      color: white;
       height: 60px;
       padding: 0px 80px;
-      border: solid 1px #686de0;
+      border-style: solid;
+      border-width: 2px;
+      background-color: #101D42;
+      border-color: #101D42;
       font-size: 20px;
       border-radius: 2px;
       cursor: pointer;
       margin-left: 20px; }
-      #search #content div button:hover {
-        background-color: #686de0;
-        color: white; }
+      #search .content div button:hover {
+        background-color: white;
+        border-color: #101D42;
+        color: #101D42; }
   #search #results {
-    border-top: solid 2px #686de0;
+    border-top: solid 2px #101D42;
     width: 100%;
     padding-top: 40px;
     margin-top: 80px; }
     #search #results h4 {
       font-size: 30px;
-      color: #686de0;
+      color: #101D42;
       margin-bottom: 20px; }
     #search #results li {
       font-size: 20px;
       color: black;
       margin-bottom: 10px; }
 
+@media only screen and (min-width: 1400px) {
+  .container {
+    padding: 160px 600px !important; } }
+
 #footer {
   display: grid;
-  background-color: #686de0;
+  background-color: #101D42;
   padding: 160px 80px;
   grid-template-columns: repeat(4, 1fr);
   color: white; }
@@ -247,3 +267,7 @@ a {
       opacity: 0.6; }
   #footer a {
     color: inherit; }
+
+@media only screen and (min-width: 1400px) {
+  #footer {
+    padding: 160px 400px; } }
