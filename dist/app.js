@@ -48,10 +48,10 @@ const apiLog = new Log({
 const httpHeader = new HttpHeader({
     'log': serverLog,
     'setHeaders': {
-        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Origin': (ENVIRONMENT.PRODUCTION) ? `https://${SERVER.HOSTNAME}` : `http://${SERVER.HOSTNAME}`,
         'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE',
         'Access-Control-Allow-Headers': 'Content-Type',
-        'Access-Control-Allow-Credentials': 'false',
+        'Access-Control-Allow-Credentials': 'true',
     }
 });
 const httpServerMain = new HttpServer({
