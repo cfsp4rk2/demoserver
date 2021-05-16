@@ -14,7 +14,7 @@ export const ENVIRONMENT = {
 };
 
 export const SERVER = {
-    'SCOPE_NAME': 'demoserver',
+    'SCOPE_NAME': 'buzzmedia',
     'SCOPE_COLOUR': 'FG_BLUE',
     'APPLICATION_NAME': 'server',
     'APPLICATION_COLOUR': 'FG_BLUE',
@@ -26,7 +26,7 @@ export const SERVER = {
 };
 
 export const API = {
-    'SCOPE_NAME': 'demoserver',
+    'SCOPE_NAME': 'buzzmedia',
     'SCOPE_COLOUR': 'FG_GREEN',
     'APPLICATION_NAME': 'api',
     'APPLICATION_COLOUR': 'FG_GREEN',
@@ -38,7 +38,7 @@ export const API = {
 };
 
 export const DATABASE = {
-    'NAME': 'demoserver',
+    'NAME': 'buzzmedia_db',
     'HOSTNAME': '127.0.0.1',
     'PROTOCOL': 'mongodb',
     'PORT': 27017,
